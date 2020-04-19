@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    background-color: red;
+}
+
+.navbar_style{
+    background-color: #a29bfe!important;
+}
+
+.navbar_style a{
+
+    color: white!important;
+}
+
+.main_header {
+    width: 100%;
+    height: 450px;
+}
+
+.main_header .rightside h1 ,h3 {
+    font-size: 2.9rem;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main_header .rightside span img{
+    animation: gocorona  5s linear infinite;
+}
+
+.main_header .rightside .heartbeat {
+    animation: heartbeat 6s linear infinite;
+}
+
+
+table {
+        height: 600px;
+        display: inline-block;
+        width: 100%;
+        overflow: scroll;
+  
+}
+table  thead,tbody{
+    margin: 0 auto;
+}
+.scroll-bar::-webkit-scrollbar{
+    width: 10px;
+	background-color: #F5F5F5;
+}
+
+.scroll-bar::-webkit-scrollbar-track{
+     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+#scroll {
+    padding: 10px;
+    position: fixed;
+    display: none;
+    right: 24px;
+    border: none;
+    bottom: 66px;
+    z-index: 99;
+    color: white;
+    background: #2d3436;
+    cursor: pointer;
+    border-radius: 15px;
+ }
+@keyframes heartbeat {
+    0% {transform: scale(1)}
+    30% {transform: scale(.76)}
+    75% {transform: scale(1)}
+    100% {transform: scale(.76)}
+}
+
+@keyframes gocorona {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(390deg);
+    }
+}
+
+
+.corana-updates .info {
+    border-bottom: 3px solid red!important;
+}
+
+
+.corana-updates h1 {
+    color: #ff7675;
+}
+
+
+.about-corona .about-corona-container {
+    width: 80%;
+    height:250px;
+    margin: 0px auto;
+    background: #F7F8F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.about-corona-container img {
+    margin-left: 33px;
+    margin-top: 23px;
+    width: 100%;
+    height: 200px;
+} 
+
+
+.about-symptoms figcaption {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-symptoms h1{
+    color: #ff7675;
+    text-decoration: underline;
+}
+
+.footer-style {
+    background-color: #a29bfe!important;
+}
+
+
+
+.footer-style p  {
+    margin: 0px;
+}
+
+
